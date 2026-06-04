@@ -45,6 +45,6 @@ Ce projet est sous licence **MIT** - Voir le fichier [LICENSE](LICENSE) pour plu
 
 ## 📧 Contact
 **Adamou Soumana**
-- 📧 ton.email@example.com
+- 📧 adam00soumana@gmail.com
 - 🔗 [LinkedIn](www.linkedin.com/in/adamou-soumana-a6537a346)
 - 🌐 [Portfolio](https://adamou-portfolio.onrender.com/)
