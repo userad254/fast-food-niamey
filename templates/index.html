@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block body %}
+<div class="container">
+  <header>
+    <h1>🍽️ Fast Food Niamey</h1>
+    <p>Des plats délicieux, livrés avec amour</p>
+  </header>
+
+  <main class="products-grid">
+    {% for produit in produits %}
+    <article class="product-card">
+      <img 
+        src="{{ produit.image}}" 
+        alt="{{ produit.name }}" 
+        class="product-image"
+        onerror="this.src='https://via.placeholder.com/300x200?text=Image+indisponible'"
+      >
+      
+      <div class="product-info">
+        <h3 class="product-name">{{ produit.name.replace('_', ' ') }}</h3>
+        <p class="product-price">{{ "%.2f"|format(produit.price / 100) }} $</p>
+        
+        <form action="{{ url_for('create_checkout_session') }}" method="POST" class="buy-form">
+          <input type="hidden" name="product_id" value="{{ produit.id }}">
+          <button type="submit" class="buy-btn">
+            🛒 Ajouter au panier
+          </button>
+        </form>
+      </div>
+    </article>
+    {% endfor %}
+  </main>
+</div>
+{% endblock %}

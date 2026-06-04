@@ -1,0 +1,20 @@
+# Flask
+__pycache__/
+*.py[cod]
+*$py.class
+instance/
+.webassets-cache
+.env
+
+# Virtual Environment
+venv/
+env/
+.venv/
+
+# IDEs
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
